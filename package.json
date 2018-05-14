@@ -1,0 +1,21 @@
+{
+    "name": "frontendflow-simple",
+    "version": "1.0.0",
+    "description": "An uncomplicated workflow for creating relatively simple frontend projects.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "gulp devserver",
+        "build": "gulp build",
+        "deploy": "yarn run build && surge -p src"
+    },
+    "repository": "https://github.com/gpfaucher/frontendflow_simple.git",
+    "author": "Gabriel Faucher <gpfaucher@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-cli": "^2.0.1"
+    },
+    "dependencies": {
+        "gulp-connect": "^5.5.0"
+    }
+}
